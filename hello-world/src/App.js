@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
@@ -16,35 +16,14 @@ import inline from './components/inline';
 import './appStyles.css';
 import './components/myStyles.css';
 import styles from './appStyles.modules.css'
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
+      <Form/>
 
-      <h1 className='error'>Error</h1>
-      <h1 className={styles.success}>Success</h1>
-      <inline/>
-
-      {/* <Stylesheet primary={true}/> */}
       
-      {/* <NameList/> */}
-      {/* <ParentComponent/> */}
-      {/* <UserGreeting/> */}
-      {/* <EventBind/> */}
-      {/* <FunctionClick />
-      <ClassClick /> */}
-      {/* <Greet name="Bruce" heroName="Batman">
-        <p>This is children props</p> </Greet>
-
-      <Greet name= "Clark" heroName= "Superman"/> */}
-
-      {/* <Greet name="Diana" heroName = "Wonder Woman"/>
-       <Welcome name="Bruce" heroName="Batman"/> */}
-      {/* <Welcome name= "Clark" heroName= "Superman" />
-      <Welcome name= "Diana" heroName= "Wonder Woman" /> */}
-      {/* <Hello/> */}
-      {/* <Message/>  */}
-      {/* <Counter/>  */}
     </div>
   );
 }
