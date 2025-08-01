@@ -17,11 +17,13 @@ import './appStyles.css';
 import './components/myStyles.css';
 import styles from './appStyles.modules.css'
 import Form from './components/Form';
+import ChildComponent from './components/ChildComponent';
+import LifecycleA from './components/LifecycleA';
 
 function App() {
   return (
     <div className="App">
-      <Form/>
+      <LifecycleA/>
 
       
     </div>
