@@ -5,7 +5,6 @@ function ComponentB() {
   return (
       <div>
           <ComponentD/>
-      
     </div>
   )
 }
