@@ -1,21 +1,21 @@
-// import React, {useState} from 'react'
-// import Child from './Child'
+import React, { useState } from 'react'
 
-// const Parent = () => {
-//     count[count, setCount] = useState(0)
+const Parent = ({children}) => {
+    const [count, setCount] = useState(0)
 
-//     console.log('Parent Render')
-//   return (
-//     <div>
-//           <button onClick={() => setCount((c) => c + 1)}>
-//               Count -{count}
-//           </button>
-//           <button onClick={() => setCount(0)}>Count to 0</button>
-//           <button onClick={() => setCount(5)}>Count to 5</button>
-//           <Child/>
-//     </div>
-//   )
-// }
+    console.log('ParentOne Render')
+  return (
+      <div>
+          <button onClick={() => setCount((c) => c + 1)}>Count - {count}</button>
+          
+          <button onClick={() => setCount(0)}>Count to 0</button>
+          <button onClick={() => setCount(5)}>Count to 5</button>
+      {children}
+    </div>
+  )
+}
 
-// export default Parent
+export default Parent
+
+
 
