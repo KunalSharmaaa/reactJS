@@ -1,0 +1,22 @@
+import React, { useState } from 'react'
+import { ChildA } from './ContextChildren'
+
+export const CountContext = React.createContext()
+const CountProvider = CountContext.Provider
+
+const ContextParent = () => {
+    const [count, setCount] = useState(0)
+
+    console.log[count,setCount] = useState(0)
+  return (
+      <div>
+      <button onClick={() => setCount(c => c + 1)}>Count - {count}</button>
+      <CountProvider value={count}>
+
+      </CountProvider>
+      <ChildA/>
+    </div>
+  )
+}
+
+export default ContextParent
